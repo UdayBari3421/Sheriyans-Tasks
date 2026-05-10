@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+body {
+    background: url(assets/bg.png);
+    /* object-fit: contain; */
+    /* overflow: hidden; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+.container {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.logo-box img {
+    height: 75px;
+    margin: 10px;
+}
+
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* height: 100px; */
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav ul li {
+    color: white;
+    list-style: none;
+}
+
+.main-contain {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.main span {
+    display: flex;
+    gap: 30px;
+}
+
+.main img {
+    width: 400px;
+}
+
+.main button {
+    padding: 2px 5px;
+    background: transparent;
+    border: none;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 40px;
+    border-radius: 15px;
+}
+
+.main2 {
+    position: relative;
+}
+
+.main2 img {
+    width: 570px;
+}
+
+.main button:first-child {
+    background: linear-gradient(to right, #B7105A, #C86215);
+}
+
+.main button:nth-child(2) {
+    border: #B7105A solid 2px;
+}
+
+.main button img {
+    width: 20px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    background-image: url(./assets/bg.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 15px;
+    gap: 20px;
+    justify-content: space-evenly;
+}
+
+.cards img {
+    width: 33.33%;
+    height: 200px;
+    border-radius: 22px;
+    border: 1px solid #B7105A;
+    box-shadow: 5px 4px 20px 0px #C86215;
+}

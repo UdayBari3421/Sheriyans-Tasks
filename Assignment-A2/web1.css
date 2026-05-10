@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --orange: #FC4608;
+    --gray-orange: #5A2009;
+    --text-orange: #F28A55;
+    --gray: #121212;
+    --black: #000000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    color: white;
+    background: var(--black);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 95%;
+    margin: auto;
+}
+
+.nav ul {
+    display: flex;
+    gap: 40px;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.nav button {
+    background: var(--gray);
+    border: none;
+    padding: 10px 12px;
+    color: white;
+    border-radius: 10px;
+}
+
+.main h1 {
+    font-size: 150px;
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.chips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.chips div:nth-child(1) {
+    background: var(--orange);
+}
+
+.chip {
+    width: 90px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 50px;
+    min-width: fit-content;
+    padding-inline: 15px;
+    background: var(--gray);
+}
+
+.cards-container {
+    padding: 20px 50px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    width: 300px;
+    background: var(--gray);
+}
+
+.card:first-child .card-head {
+    background: url(./assets/glass.png) center no-repeat;
+    padding: 20px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.card:nth-child(2) .card-head {
+    background: url(./assets/chair.png) center no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.card:nth-child(3) .card-head {
+    background: url(./assets/cat.jpg) center no-repeat;
+    background-size: cover;
+    padding: 20px;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.card-body span:first-child {
+    background: var(--gray-orange);
+    color: #F28A55;
+    width: fit-content;
+    padding: 2px 15px;
+    border-radius: 20px;
+}
+
+.card-body span:last-child {
+    color: gray;
+}

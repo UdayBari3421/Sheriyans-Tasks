@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+@font-face {
+    font-family: "Reckless";
+    src: url("./reckless.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'Midnight';
+    src: url(https://cdn.shopify.com/s/files/1/0297/8132/7932/files/midnight-sans-rd-12-medium-trial.otf?v=1768200246) format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.font-reckless {
+    font-family: "Reckless", Helvetica, sans-serif;
+}
+
+.font-figtree {
+    font-family: "Figtree", sans-serif;
+}
+
+.font-midnight {
+    font-family: "Midnight", sans-serif;
+}
+
+.font-roboto {
+    font-family: "Roboto Mono", monospace;
+}
+
+.hero {
+    min-height: calc(100% - 110px);
+}
+
+.best-seller {
+    transform: rotate(-2deg);
+    animation: slideDown .4s cubic-bezier(.22, 1, .36, 1) forwards, tilt .2s ease-out .4s forwards;
+    transform-origin: top center;
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -200px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes tilt {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-3deg);
+    }
+}
